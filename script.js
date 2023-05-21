@@ -10,6 +10,9 @@ function myfunc(event) {
 	
 }
 const input = document.getElementById("evaluatedText");
+input.addEventListener("click", ()=>{
+	document.getElementById("letterCount").innerText = 0;
+})
 input.addEventListener("input", (event) => {
 	myfunc(event);
 });
